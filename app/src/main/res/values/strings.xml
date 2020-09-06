@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name" translatable="false">MurMurchik</string>
+    <string name="app_name" translatable="false">МурМурчик</string>
+
+    <string name="item_cat_profile_cat_name">Имя питомца:</string>
+    <string name="item_cat_profile_people_name">Имя хозяина:</string>
+    <string name="item_cat_profile_date">Дата посещения:</string>
+
 </resources>

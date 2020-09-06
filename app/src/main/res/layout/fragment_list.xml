@@ -8,12 +8,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.list.ListFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="List Fragment"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerListOfCat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/item_cat_profile"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout
->
+</androidx.constraintlayout.widget.ConstraintLayout>
