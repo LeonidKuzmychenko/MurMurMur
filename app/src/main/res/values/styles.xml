@@ -12,4 +12,8 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="AppTheme.NonStatusBar" parent="AppTheme.Main">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
 </resources>
