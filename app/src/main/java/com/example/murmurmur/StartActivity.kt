@@ -13,7 +13,7 @@ class StartActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_start)
         GlobalScope.launch {
-            Thread.sleep(5000)
+            Thread.sleep(2000)
             startActivity(Intent(this@StartActivity, MainActivity::class.java))
             finish()
         }
