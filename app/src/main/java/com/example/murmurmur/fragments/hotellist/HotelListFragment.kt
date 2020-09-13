@@ -9,11 +9,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelProviders
 import com.example.murmurmur.R
 import com.example.murmurmur.application.InitApp
-import com.example.murmurmur.dagger2.AppComponent
-import com.example.murmurmur.dagger2.DaggerAppComponent
 import com.example.murmurmur.fragments.hotellist.adapter.CatsAdapter
 import com.example.murmurmur.items.CatProfile
 import kotlinx.android.synthetic.main.fragment_list.*
