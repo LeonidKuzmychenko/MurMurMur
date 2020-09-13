@@ -1,4 +1,4 @@
-package com.example.murmurmur.fragments.list.adapter
+package com.example.murmurmur.fragments.hotellist.adapter
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater

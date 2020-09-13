@@ -6,7 +6,7 @@
     app:startDestination="@id/listFragment">
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.example.murmurmur.fragments.list.ListFragment"
+        android:name="com.example.murmurmur.fragments.hotellist.HotelListFragment"
         android:label="MurMurchic List"
         tools:layout="@layout/fragment_list" >
         <action
