@@ -10,8 +10,9 @@ import com.example.murmurmur.R
 import com.example.murmurmur.items.CatProfile
 import java.text.SimpleDateFormat
 
-class CatsAdapter(private val list: List<CatProfile>) :
-    RecyclerView.Adapter<CatsAdapter.CatsViewHolder>() {
+class  CatsAdapter : RecyclerView.Adapter<CatsAdapter.CatsViewHolder>() {
+
+    private var list: List<CatProfile> = listOf()
 
     class CatsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val cat: TextView = itemView.findViewById(R.id.item_cat_profile_cat_name)
@@ -39,4 +40,8 @@ class CatsAdapter(private val list: List<CatProfile>) :
 
     override fun getItemCount() = list.size
 
+    fun setList(list: List<CatProfile>){
+        this.list = list
+        notifyDataSetChanged()
+    }
 }

@@ -8,7 +8,7 @@
         android:id="@+id/listFragment"
         android:name="com.example.murmurmur.fragments.hotellist.HotelListFragment"
         android:label="MurMurchic List"
-        tools:layout="@layout/fragment_list" >
+        tools:layout="@layout/fragment_list">
         <action
             android:id="@+id/action_listFragment_to_infoFragment"
             app:destination="@id/infoFragment" />
@@ -17,7 +17,7 @@
         android:id="@+id/infoFragment"
         android:name="com.example.murmurmur.fragments.edit.InfoFragment"
         android:label="fragment_info"
-        tools:layout="@layout/fragment_info" >
+        tools:layout="@layout/fragment_info">
         <action
             android:id="@+id/action_infoFragment_to_editInfoFragment"
             app:destination="@id/editInfoFragment" />
@@ -27,4 +27,13 @@
         android:name="com.example.murmurmur.fragments.editinfo.EditInfoFragment"
         android:label="fragment_edit_info"
         tools:layout="@layout/fragment_edit_info" />
+    <fragment
+        android:id="@+id/groomingFragment"
+        android:name="com.example.murmurmur.fragments.grooming.GroomingFragment"
+        android:label="grooming_fragment"
+        tools:layout="@layout/grooming_fragment" >
+        <action
+            android:id="@+id/action_groomingFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
 </navigation>
