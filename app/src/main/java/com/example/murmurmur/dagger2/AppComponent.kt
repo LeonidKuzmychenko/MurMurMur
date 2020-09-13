@@ -9,6 +9,6 @@ import javax.inject.Singleton
 @Component(modules = [AppModule::class])
 interface AppComponent {
 
-    public fun inject(fragment: HotelListFragment)
+    fun inject(fragment: HotelListFragment)
 
 }

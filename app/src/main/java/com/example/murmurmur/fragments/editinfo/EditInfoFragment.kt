@@ -12,7 +12,11 @@ class EditInfoFragment : Fragment() {
 
     private lateinit var viewModel: EditInfoFragmentViewModel
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         return inflater.inflate(R.layout.fragment_edit_info, container, false)
     }
 

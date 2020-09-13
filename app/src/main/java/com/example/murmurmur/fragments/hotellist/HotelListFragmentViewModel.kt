@@ -5,6 +5,6 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.murmurmur.items.CatProfile
 
-class HotelListFragmentViewModel : ViewModel(){
+class HotelListFragmentViewModel : ViewModel() {
     val list: LiveData<List<CatProfile>> = MutableLiveData()
 }

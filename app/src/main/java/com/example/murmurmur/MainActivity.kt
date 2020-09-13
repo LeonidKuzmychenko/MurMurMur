@@ -27,24 +27,26 @@ class MainActivity : AppCompatActivity() {
     }
 
     //2
-    private fun setToolbar(){
+    private fun setToolbar() {
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
     }
 
     //3
-    private fun setupActionBarWithNavController(){
+    private fun setupActionBarWithNavController() {
         val fragments = setOf(R.id.listFragment, R.id.groomingFragment)
-        val drawerLayout: DrawerLayout = findViewById(R.id.activity_main_drawer_layout) //link to main_activity view
+        val drawerLayout: DrawerLayout =
+            findViewById(R.id.activity_main_drawer_layout) //link to main_activity view
         appBarConfiguration = AppBarConfiguration(fragments, drawerLayout)
         val navController = Navigation.findNavController(this, R.id.nav_host_fragment)
         setupActionBarWithNavController(navController, appBarConfiguration)
     }
 
     //4
-    private fun setupWithNavController(){
+    private fun setupWithNavController() {
         val navController = Navigation.findNavController(this, R.id.nav_host_fragment)
-        val navView: NavigationView = findViewById(R.id.nav_view) //link to main_activity NavigationView
+        val navView: NavigationView =
+            findViewById(R.id.nav_view) //link to main_activity NavigationView
         navView.setupWithNavController(navController)
     }
 

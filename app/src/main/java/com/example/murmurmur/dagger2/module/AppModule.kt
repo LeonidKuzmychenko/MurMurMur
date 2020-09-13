@@ -8,7 +8,7 @@ import dagger.Provides
 class AppModule {
 
     @Provides
-    fun provideCatsAdapter(): CatsAdapter{
+    fun provideCatsAdapter(): CatsAdapter {
         return CatsAdapter()
     }
 

@@ -22,11 +22,11 @@ class HotelListFragment : Fragment() {
     private lateinit var viewModel: HotelListFragmentViewModel
 
     @Inject
-    lateinit var adapter:CatsAdapter
+    lateinit var adapter: CatsAdapter
 
     //5
     override fun onActivityCreated(savedInstanceState: Bundle?) {
-        Log.d("TestLog","onActivityCreated")
+        Log.d("TestLog", "onActivityCreated")
         super.onActivityCreated(savedInstanceState)
         val list = listOf(
             CatProfile("Маруся", "Олюся", Date()),
@@ -46,14 +46,15 @@ class HotelListFragment : Fragment() {
             CatProfile("Маруся", "Олюся", Date()),
             CatProfile("Маруся", "Олюся", Date()),
             CatProfile("Маруся", "Олюся", Date()),
-            CatProfile("Маруся", "Олюся", Date()))
+            CatProfile("Маруся", "Олюся", Date())
+        )
 
         adapter.setList(list)
     }
 
     //4
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        Log.d("TestLog","onViewCreated")
+        Log.d("TestLog", "onViewCreated")
         super.onViewCreated(view, savedInstanceState)
 
         recyclerListOfCat.adapter = adapter
@@ -65,20 +66,24 @@ class HotelListFragment : Fragment() {
     }
 
     //3
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        Log.d("TestLog","onCreateView")
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        Log.d("TestLog", "onCreateView")
         return inflater.inflate(R.layout.fragment_list, container, false)
     }
 
     //2
     override fun onCreate(savedInstanceState: Bundle?) {
-        Log.d("TestLog","onCreate")
+        Log.d("TestLog", "onCreate")
         super.onCreate(savedInstanceState)
     }
 
     //1
     override fun onAttach(context: Context) {
-        Log.d("TestLog","onAttach")
+        Log.d("TestLog", "onAttach")
         (context.applicationContext as InitApp).appComponent().inject(this)
         super.onAttach(context)
     }

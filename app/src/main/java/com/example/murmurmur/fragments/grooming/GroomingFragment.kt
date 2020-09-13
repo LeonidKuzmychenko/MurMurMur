@@ -12,7 +12,11 @@ class GroomingFragment : Fragment() {
 
     private lateinit var fragmentViewModel: GroomingFragmentViewModel
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         return inflater.inflate(R.layout.grooming_fragment, container, false)
     }
 
