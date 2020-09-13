@@ -28,7 +28,7 @@ class HotelInfoFragment : Fragment() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.hotelInfoFragmentEditing) {
-            val action = HotelInfoFragmentDirections.actionHotelInfoFragmentToHotelEditInfoFragment2()
+            val action = HotelInfoFragmentDirections.actionHotelInfoFragmentToHotelEditInfoFragment()
             Navigation.findNavController(requireView()).navigate(action)
         }
         return super.onOptionsItemSelected(item)
