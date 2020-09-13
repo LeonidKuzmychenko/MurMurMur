@@ -8,9 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.murmurmur.R
 
-class EditInfoFragment : Fragment() {
+class HotelEditInfoFragment : Fragment() {
 
-    private lateinit var viewModel: EditInfoFragmentViewModel
+    private lateinit var viewModelHotel: HotelEditInfoFragmentViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -22,6 +22,6 @@ class EditInfoFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(EditInfoFragmentViewModel::class.java)
+        viewModelHotel = ViewModelProvider(this).get(HotelEditInfoFragmentViewModel::class.java)
     }
 }

@@ -3,37 +3,37 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_nav"
-    app:startDestination="@id/listFragment">
+    app:startDestination="@id/hotelListFragment">
     <fragment
-        android:id="@+id/listFragment"
+        android:id="@+id/hotelListFragment"
         android:name="com.example.murmurmur.fragments.hotellist.HotelListFragment"
-        android:label="MurMurchic List"
+        android:label="Отель"
         tools:layout="@layout/fragment_list">
         <action
-            android:id="@+id/action_listFragment_to_infoFragment"
-            app:destination="@id/infoFragment" />
+            android:id="@+id/action_hotelListFragment_to_hotelInfoFragment"
+            app:destination="@id/hotelInfoFragment" />
     </fragment>
     <fragment
-        android:id="@+id/infoFragment"
-        android:name="com.example.murmurmur.fragments.edit.InfoFragment"
-        android:label="fragment_info"
-        tools:layout="@layout/fragment_info">
+        android:id="@+id/hotelInfoFragment"
+        android:name="com.example.murmurmur.fragments.edit.HotelInfoFragment"
+        android:label="Информация о животном"
+        tools:layout="@layout/fragment_info" >
         <action
-            android:id="@+id/action_infoFragment_to_editInfoFragment"
-            app:destination="@id/editInfoFragment" />
+            android:id="@+id/action_hotelInfoFragment_to_hotelEditInfoFragment2"
+            app:destination="@id/hotelEditInfoFragment" />
     </fragment>
     <fragment
-        android:id="@+id/editInfoFragment"
-        android:name="com.example.murmurmur.fragments.editinfo.EditInfoFragment"
-        android:label="fragment_edit_info"
+        android:id="@+id/hotelEditInfoFragment"
+        android:name="com.example.murmurmur.fragments.editinfo.HotelEditInfoFragment"
+        android:label="Редактирование информации"
         tools:layout="@layout/fragment_edit_info" />
     <fragment
         android:id="@+id/groomingFragment"
         android:name="com.example.murmurmur.fragments.grooming.GroomingFragment"
-        android:label="grooming_fragment"
-        tools:layout="@layout/grooming_fragment" >
+        android:label="Груминг"
+        tools:layout="@layout/grooming_fragment">
         <action
-            android:id="@+id/action_groomingFragment_to_infoFragment"
-            app:destination="@id/infoFragment" />
+            android:id="@+id/action_groomingFragment_to_hotelInfoFragment"
+            app:destination="@id/hotelInfoFragment" />
     </fragment>
 </navigation>

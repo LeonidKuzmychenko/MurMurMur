@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
     //3
     private fun setupActionBarWithNavController() {
-        val fragments = setOf(R.id.listFragment, R.id.groomingFragment)
+        val fragments = setOf(R.id.hotelListFragment, R.id.groomingFragment)
         val drawerLayout: DrawerLayout =
             findViewById(R.id.activity_main_drawer_layout) //link to main_activity view
         appBarConfiguration = AppBarConfiguration(fragments, drawerLayout)
