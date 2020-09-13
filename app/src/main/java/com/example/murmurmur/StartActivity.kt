@@ -1,9 +1,8 @@
 package com.example.murmurmur
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.navigation.NavController
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
