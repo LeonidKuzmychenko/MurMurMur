@@ -1,4 +1,4 @@
-package com.example.murmurmur.fragments.grooming.cat
+package com.example.murmurmur.fragments.grooming.list.cat
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -17,7 +17,7 @@ class GroomingCatFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.grooming_cat_fragment, container, false)
+        return inflater.inflate(R.layout.fragment_grooming_cat, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

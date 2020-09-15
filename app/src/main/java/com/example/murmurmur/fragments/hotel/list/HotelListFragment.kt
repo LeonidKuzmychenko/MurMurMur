@@ -1,4 +1,4 @@
-package com.example.murmurmur.fragments.hotellist
+package com.example.murmurmur.fragments.hotel.list
 
 import android.content.Context
 import android.os.Bundle
@@ -11,9 +11,9 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.murmurmur.R
 import com.example.murmurmur.application.InitApp
-import com.example.murmurmur.fragments.hotellist.adapter.CatsAdapter
+import com.example.murmurmur.fragments.hotel.list.adapter.CatsAdapter
 import com.example.murmurmur.items.CatProfile
-import kotlinx.android.synthetic.main.fragment_list.*
+import kotlinx.android.synthetic.main.fragment_hotel_list.*
 import java.util.*
 import javax.inject.Inject
 
@@ -72,7 +72,7 @@ class HotelListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         Log.d("TestLog", "onCreateView")
-        return inflater.inflate(R.layout.fragment_list, container, false)
+        return inflater.inflate(R.layout.fragment_hotel_list, container, false)
     }
 
     //2

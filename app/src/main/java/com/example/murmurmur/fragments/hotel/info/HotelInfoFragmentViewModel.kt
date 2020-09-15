@@ -1,4 +1,4 @@
-package com.example.murmurmur.fragments.edit
+package com.example.murmurmur.fragments.hotel.info
 
 import androidx.lifecycle.ViewModel
 

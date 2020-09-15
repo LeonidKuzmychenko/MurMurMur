@@ -1,4 +1,4 @@
-package com.example.murmurmur.fragments.hotellist
+package com.example.murmurmur.fragments.hotel.list
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

@@ -6,40 +6,62 @@
     app:startDestination="@id/hotelListFragment">
     <fragment
         android:id="@+id/hotelListFragment"
-        android:name="com.example.murmurmur.fragments.hotellist.HotelListFragment"
+        android:name="com.example.murmurmur.fragments.hotel.list.HotelListFragment"
         android:label="Отель"
-        tools:layout="@layout/fragment_list">
+        tools:layout="@layout/fragment_hotel_list">
         <action
             android:id="@+id/action_hotelListFragment_to_hotelInfoFragment"
             app:destination="@id/hotelInfoFragment" />
     </fragment>
     <fragment
         android:id="@+id/hotelInfoFragment"
-        android:name="com.example.murmurmur.fragments.edit.HotelInfoFragment"
-        android:label="Информация о животном"
-        tools:layout="@layout/fragment_info" >
+        android:name="com.example.murmurmur.fragments.hotel.info.HotelInfoFragment"
+        android:label="Информация"
+        tools:layout="@layout/fragment_hotel_info">
         <action
             android:id="@+id/action_hotelInfoFragment_to_hotelEditInfoFragment"
             app:destination="@id/hotelEditInfoFragment" />
     </fragment>
     <fragment
         android:id="@+id/hotelEditInfoFragment"
-        android:name="com.example.murmurmur.fragments.editinfo.HotelEditInfoFragment"
-        android:label="Редактирование информации"
-        tools:layout="@layout/fragment_edit_info" />
+        android:name="com.example.murmurmur.fragments.hotel.editinfo.HotelEditInfoFragment"
+        android:label="Редактирование"
+        tools:layout="@layout/fragment_hotel_edit_info" />
     <fragment
         android:id="@+id/financialReportFragment"
         android:name="com.example.murmurmur.fragments.financial.FinancialReportFragment"
-        android:label="financial_report_fragment"
-        tools:layout="@layout/financial_report_fragment" />
+        android:label="Финансовый отчет"
+        tools:layout="@layout/fragment_financial_report" />
     <fragment
         android:id="@+id/groomingCatFragment"
-        android:name="com.example.murmurmur.fragments.grooming.cat.GroomingCatFragment"
-        android:label="grooming_cat_fragment"
-        tools:layout="@layout/grooming_cat_fragment" />
+        android:name="com.example.murmurmur.fragments.grooming.list.cat.GroomingCatFragment"
+        android:label="Груминг котики"
+        tools:layout="@layout/fragment_grooming_cat">
+        <action
+            android:id="@+id/action_groomingCatFragment_to_groomingInfoFragment"
+            app:destination="@id/groomingInfoFragment" />
+    </fragment>
     <fragment
         android:id="@+id/groomingDogFragment"
-        android:name="com.example.murmurmur.fragments.grooming.dog.GroomingDogFragment"
-        android:label="grooming_dog_fragment"
-        tools:layout="@layout/grooming_dog_fragment" />
+        android:name="com.example.murmurmur.fragments.grooming.list.dog.GroomingDogFragment"
+        android:label="Груминг собачки"
+        tools:layout="@layout/fragment_grooming_dog">
+        <action
+            android:id="@+id/action_groomingDogFragment_to_groomingInfoFragment"
+            app:destination="@id/groomingInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groomingEditInfoFragment"
+        android:name="com.example.murmurmur.fragments.grooming.editinfo.GroomingEditInfoFragment"
+        android:label="Редактирование"
+        tools:layout="@layout/fragment_grooming_edit_info" />
+    <fragment
+        android:id="@+id/groomingInfoFragment"
+        android:name="com.example.murmurmur.fragments.grooming.info.GroomingInfoFragment"
+        android:label="Информация"
+        tools:layout="@layout/fragment_grooming_info">
+        <action
+            android:id="@+id/action_groomingInfoFragment_to_groomingEditInfoFragment"
+            app:destination="@id/groomingEditInfoFragment" />
+    </fragment>
 </navigation>

@@ -1,4 +1,4 @@
-package com.example.murmurmur.fragments.hotellist.adapter
+package com.example.murmurmur.fragments.hotel.list.adapter
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -8,9 +8,7 @@ import android.widget.TextView
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.example.murmurmur.R
-import com.example.murmurmur.fragments.edit.HotelInfoFragmentDirections
-import com.example.murmurmur.fragments.hotellist.HotelListFragment
-import com.example.murmurmur.fragments.hotellist.HotelListFragmentDirections
+import com.example.murmurmur.fragments.hotel.list.HotelListFragmentDirections
 import com.example.murmurmur.items.CatProfile
 import java.text.SimpleDateFormat
 

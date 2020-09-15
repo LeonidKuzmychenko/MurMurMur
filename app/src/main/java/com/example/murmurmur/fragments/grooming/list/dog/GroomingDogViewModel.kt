@@ -1,4 +1,4 @@
-package com.example.murmurmur.fragments.grooming.dog
+package com.example.murmurmur.fragments.grooming.list.dog
 
 import androidx.lifecycle.ViewModel
 

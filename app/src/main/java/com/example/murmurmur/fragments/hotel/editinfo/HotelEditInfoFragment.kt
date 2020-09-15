@@ -1,4 +1,4 @@
-package com.example.murmurmur.fragments.editinfo
+package com.example.murmurmur.fragments.hotel.editinfo
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -17,7 +17,7 @@ class HotelEditInfoFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_edit_info, container, false)
+        return inflater.inflate(R.layout.fragment_hotel_edit_info, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

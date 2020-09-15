@@ -1,4 +1,4 @@
-package com.example.murmurmur.fragments.edit
+package com.example.murmurmur.fragments.hotel.info
 
 import android.os.Bundle
 import android.view.*
@@ -13,7 +13,7 @@ class HotelInfoFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         setHasOptionsMenu(true)
-        return inflater.inflate(R.layout.fragment_info, container, false)
+        return inflater.inflate(R.layout.fragment_hotel_info, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
