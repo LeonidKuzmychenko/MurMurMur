@@ -7,12 +7,23 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/hotelListFragment"
-            android:icon="@drawable/cat_1"
+            android:icon="@drawable/cat_svg"
             android:title="Отель" />
+
         <item
-            android:id="@+id/groomingFragment"
-            android:icon="@drawable/cat_1"
-            android:title="Груминг" />
+            android:id="@+id/groomingCatFragment"
+            android:icon="@drawable/scissors_svg"
+            android:title="Груминг котики" />
+
+        <item
+            android:id="@+id/groomingDogFragment"
+            android:icon="@drawable/scissors_svg"
+            android:title="Груминг собачки" />
+
+        <item
+            android:id="@+id/financialReportFragment"
+            android:icon="@drawable/money_svg"
+            android:title="Фин. отчет" />
     </group>
 
 </menu>

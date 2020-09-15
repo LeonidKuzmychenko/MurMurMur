@@ -19,7 +19,7 @@
         android:label="Информация о животном"
         tools:layout="@layout/fragment_info" >
         <action
-            android:id="@+id/action_hotelInfoFragment_to_hotelEditInfoFragment2"
+            android:id="@+id/action_hotelInfoFragment_to_hotelEditInfoFragment"
             app:destination="@id/hotelEditInfoFragment" />
     </fragment>
     <fragment
@@ -28,12 +28,18 @@
         android:label="Редактирование информации"
         tools:layout="@layout/fragment_edit_info" />
     <fragment
-        android:id="@+id/groomingFragment"
-        android:name="com.example.murmurmur.fragments.grooming.GroomingFragment"
-        android:label="Груминг"
-        tools:layout="@layout/grooming_fragment">
-        <action
-            android:id="@+id/action_groomingFragment_to_hotelInfoFragment"
-            app:destination="@id/hotelInfoFragment" />
-    </fragment>
+        android:id="@+id/financialReportFragment"
+        android:name="com.example.murmurmur.fragments.financial.FinancialReportFragment"
+        android:label="financial_report_fragment"
+        tools:layout="@layout/financial_report_fragment" />
+    <fragment
+        android:id="@+id/groomingCatFragment"
+        android:name="com.example.murmurmur.fragments.grooming.cat.GroomingCatFragment"
+        android:label="grooming_cat_fragment"
+        tools:layout="@layout/grooming_cat_fragment" />
+    <fragment
+        android:id="@+id/groomingDogFragment"
+        android:name="com.example.murmurmur.fragments.grooming.dog.GroomingDogFragment"
+        android:label="grooming_dog_fragment"
+        tools:layout="@layout/grooming_dog_fragment" />
 </navigation>
