@@ -4,6 +4,7 @@ import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.*
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -95,10 +96,11 @@ class HotelListFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-//        if (item.itemId == R.id.menu_item_fragment_hotel_edit_info_ok) {
+        if (item.itemId == R.id.menu_item_fragment_hotel_add) {
+            Navigation.findNavController(requireView()).navigate(R.id.addHotelProfileDialog)
 //            val action = HotelInfoFragmentDirections.actionHotelInfoFragmentToHotelEditInfoFragment()
 //            Navigation.findNavController(requireView()).navigate(action)
-//        }
+        }
         return super.onOptionsItemSelected(item)
     }
 

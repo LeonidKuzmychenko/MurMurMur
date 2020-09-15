@@ -2,8 +2,10 @@ package com.example.murmurmur.fragments.hotel.editinfo
 
 import android.os.Bundle
 import android.view.*
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.Navigation
 import com.example.murmurmur.R
 
 class HotelEditInfoFragment : Fragment() {
@@ -26,10 +28,9 @@ class HotelEditInfoFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-//        if (item.itemId == R.id.menu_item_fragment_hotel_edit_info_ok) {
-//            val action = HotelInfoFragmentDirections.actionHotelInfoFragmentToHotelEditInfoFragment()
-//            Navigation.findNavController(requireView()).navigate(action)
-//        }
+        if (item.itemId == R.id.menu_item_fragment_hotel_edit_info_ok) {
+            Navigation.findNavController(requireView()).popBackStack()
+        }
         return super.onOptionsItemSelected(item)
     }
 }

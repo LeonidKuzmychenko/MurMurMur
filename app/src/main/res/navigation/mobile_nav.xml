@@ -12,6 +12,9 @@
         <action
             android:id="@+id/action_hotelListFragment_to_hotelInfoFragment"
             app:destination="@id/hotelInfoFragment" />
+        <action
+            android:id="@+id/action_hotelListFragment_to_addHotelProfileDialog"
+            app:destination="@id/addHotelProfileDialog" />
     </fragment>
     <fragment
         android:id="@+id/hotelInfoFragment"
@@ -86,4 +89,12 @@
             app:argType="integer"
             android:defaultValue="-1" />
     </fragment>
+    <dialog
+        android:id="@+id/addHotelProfileDialog"
+        android:name="com.example.murmurmur.dialogs.AddHotelProfileDialog"
+        android:label="Добавить профиль">
+        <action
+            android:id="@+id/action_addHotelProfileDialog_to_hotelEditInfoFragment"
+            app:destination="@id/hotelEditInfoFragment" />
+    </dialog>
 </navigation>
