@@ -22,12 +22,12 @@ class HotelInfoFragment : Fragment() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.fragment_hotel_info_profile, menu)
+        inflater.inflate(R.menu.menu_fragment_hotel_info, menu)
         super.onCreateOptionsMenu(menu, inflater)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.hotelInfoFragmentEditing) {
+        if (item.itemId == R.id.menu_item_fragment_hotel_info_change) {
             val action = HotelInfoFragmentDirections.actionHotelInfoFragmentToHotelEditInfoFragment()
             Navigation.findNavController(requireView()).navigate(action)
         }

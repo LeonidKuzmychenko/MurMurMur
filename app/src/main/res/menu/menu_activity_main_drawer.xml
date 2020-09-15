@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/hotelListFragment"
+            android:icon="@drawable/bed_svg"
+            android:title="Отель" />
+
+        <item android:title="Груминг">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/groomingCatFragment"
+                        android:icon="@drawable/cat_svg"
+                        android:title="Котики" />
+
+                    <item
+                        android:id="@+id/groomingDogFragment"
+                        android:icon="@drawable/dog_svg"
+                        android:title="Собачки" />
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="Финансы">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/financialReportFragment"
+                        android:icon="@drawable/money_svg"
+                        android:title="Отчет" />
+                </group>
+            </menu>
+        </item>
+
+    </group>
+
+</menu>

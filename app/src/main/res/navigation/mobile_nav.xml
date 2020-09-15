@@ -21,12 +21,21 @@
         <action
             android:id="@+id/action_hotelInfoFragment_to_hotelEditInfoFragment"
             app:destination="@id/hotelEditInfoFragment" />
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="-1" />
     </fragment>
     <fragment
         android:id="@+id/hotelEditInfoFragment"
         android:name="com.example.murmurmur.fragments.hotel.editinfo.HotelEditInfoFragment"
         android:label="Редактирование"
-        tools:layout="@layout/fragment_hotel_edit_info" />
+        tools:layout="@layout/fragment_hotel_edit_info" >
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
     <fragment
         android:id="@+id/financialReportFragment"
         android:name="com.example.murmurmur.fragments.financial.FinancialReportFragment"
@@ -54,7 +63,12 @@
         android:id="@+id/groomingEditInfoFragment"
         android:name="com.example.murmurmur.fragments.grooming.editinfo.GroomingEditInfoFragment"
         android:label="Редактирование"
-        tools:layout="@layout/fragment_grooming_edit_info" />
+        tools:layout="@layout/fragment_grooming_edit_info" >
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
     <fragment
         android:id="@+id/groomingInfoFragment"
         android:name="com.example.murmurmur.fragments.grooming.info.GroomingInfoFragment"
@@ -63,5 +77,13 @@
         <action
             android:id="@+id/action_groomingInfoFragment_to_groomingEditInfoFragment"
             app:destination="@id/groomingEditInfoFragment" />
+        <argument
+            android:name="type"
+            app:argType="com.example.murmurmur.enums.AnimalType"
+            android:defaultValue="NONE" />
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="-1" />
     </fragment>
 </navigation>

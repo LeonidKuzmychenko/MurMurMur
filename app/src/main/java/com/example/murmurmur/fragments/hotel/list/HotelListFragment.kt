@@ -3,14 +3,14 @@ package com.example.murmurmur.fragments.hotel.list
 import android.content.Context
 import android.os.Bundle
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.Navigation
 import com.example.murmurmur.R
 import com.example.murmurmur.application.InitApp
+import com.example.murmurmur.fragments.hotel.info.HotelInfoFragmentDirections
 import com.example.murmurmur.fragments.hotel.list.adapter.CatsAdapter
 import com.example.murmurmur.items.CatProfile
 import kotlinx.android.synthetic.main.fragment_hotel_list.*
@@ -71,6 +71,7 @@ class HotelListFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        setHasOptionsMenu(true)
         Log.d("TestLog", "onCreateView")
         return inflater.inflate(R.layout.fragment_hotel_list, container, false)
     }
@@ -86,6 +87,19 @@ class HotelListFragment : Fragment() {
         Log.d("TestLog", "onAttach")
         (context.applicationContext as InitApp).appComponent().inject(this)
         super.onAttach(context)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.menu_fragment_hotel, menu)
+        super.onCreateOptionsMenu(menu, inflater)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+//        if (item.itemId == R.id.menu_item_fragment_hotel_edit_info_ok) {
+//            val action = HotelInfoFragmentDirections.actionHotelInfoFragmentToHotelEditInfoFragment()
+//            Navigation.findNavController(requireView()).navigate(action)
+//        }
+        return super.onOptionsItemSelected(item)
     }
 
 }

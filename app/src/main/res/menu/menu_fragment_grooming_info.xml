@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/hotelInfoFragmentEditing"
+        android:id="@+id/menu_item_fragment_grooming_info_change"
         android:icon="@drawable/edit_svg"
-        android:title="Редактирование"
+        android:title="Редактировать"
         app:showAsAction="always"/>
 </menu>
