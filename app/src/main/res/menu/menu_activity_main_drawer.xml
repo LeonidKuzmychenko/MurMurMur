@@ -6,7 +6,7 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/hotelListFragment"
-            android:icon="@drawable/bed_svg"
+            android:icon="@drawable/kitty_svg"
             android:title="Отель" />
 
         <item android:title="Груминг">
